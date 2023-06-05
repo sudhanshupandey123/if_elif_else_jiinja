@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If_Elif_Else</title>
+    <style>
+        #first{
+            border: 2px solid black;
+            background-color: violet;
+            color: darkgoldenrod;
+        }
+        #second{
+            border: 2px solid black;
+            background-color: tomato;
+            color: black;
+        }
+        body{
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="first">
+            <marquee><h1>Welcome to If_Elif_Else_Block</h1></marquee>
+        </div>
+        <div id="second">
+            {% if marks > 90 and marks <= 100  %}
+                <h1>Name : {{name}} </h1>
+                <h1>Marks : {{marks}} </h1>
+                <h1>Grade : A+ </h1>
+            {% elif marks > 80 and marks <= 90 %}
+                <h1>Name : {{name}} </h1>
+                <h1>Marks : {{marks}} </h1>
+                <h1>Grade : A </h1>
+            {% elif marks > 70 and marks <= 80 %}
+                <h1>Name : {{name}} </h1>
+                <h1>Marks : {{marks}} </h1>
+                <h1>Grade : B+ </h1>
+            {% elif marks > 60 and marks <= 70 %}
+                <h1>Name : {{name}} </h1>
+                <h1>Marks : {{marks}} </h1>
+                <h1>Grade : B </h1>
+            {% elif marks > 60 and marks <= 70 %}
+                <h1>Name : {{name}} </h1>
+                <h1>Marks : {{marks}} </h1>
+                <h1>Grade : C </h1>
+            {% elif marks > 60 and marks <= 70 %}
+                <h1>Name : {{name}} </h1>
+                <h1>Marks : {{marks}} </h1>
+                <h1>Grade : D </h1>
+            {% else %}
+                <h1>Name : {{name}} </h1>
+                <h1>Marks : {{marks}} </h1>
+                <h1>Grade : Fail </h1>
+            {% endif %}
+
+
+
+        </div>
+    </center>
+</body>
+</html>
